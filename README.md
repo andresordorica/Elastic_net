@@ -22,15 +22,15 @@ ElasticNet(alpha=1, l1_ratio=0.5, max_iter=100, tol=0.0001)
 Example:
 #Your Data (X) and target_variables (y) should be np.arrays
 #In this example the X,y have been split into training and testing data sets
-# You can use the following function
+# Example
 4. def test_train_split(x_array, y_array, train_size = 0.6, shuffle=True):
-      if x_array.ndim > 1:
-          np.random.shuffle(x_array)
-      new_matrix = np.append(x_array, y_array.reshape(-1, 1), axis=1)
-      num_rows = int((np.shape(new_matrix)[0]) * train_size)
-      x_train, y_train = new_matrix[:num_rows, :-1], new_matrix[:num_rows, -1]
-      x_test, y_test = new_matrix[num_rows:, :-1], new_matrix[num_rows:, -1]
-      return x_train, y_train, x_test, y_test
+if x_array.ndim > 1:
+np.random.shuffle(x_array)
+new_matrix = np.append(x_array, y_array.reshape(-1, 1), axis=1)
+num_rows = int((np.shape(new_matrix)[0]) * train_size)
+x_train, y_train = new_matrix[:num_rows, :-1], new_matrix[:num_rows, -1]
+x_test, y_test = new_matrix[num_rows:, :-1], new_matrix[num_rows:, -1]
+return x_train, y_train, x_test, y_test
     
 5. x_train, y_train, x_test, y_test = test_train_split(X,y)
 
