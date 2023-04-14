@@ -1,4 +1,11 @@
 # Elastic_net
+This plugin can handle:
+
+Linear regression
+Ridge regression
+Lasso regression
+Elastic Net regression
+
 Elastic_net cython implementation
 1. To compile the *.pyx make sure Cython is installed.
 
