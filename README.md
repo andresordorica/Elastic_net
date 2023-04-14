@@ -1,14 +1,14 @@
 # Elastic_net
 Elastic_net cython implementation
 1. To compile the *.pyx make sure Cython is installed.
-  1.1  pip install Cython
+pip install Cython
 2. After that compile the elastic_net.pyx code by running:
-  2.1 python setup.py build_ext --inplace
+python setup.py build_ext --inplace
   
 3. To use the ElasticNet class from the elastic_net code just add the following lines to your python script.
-  import sys
-  sys.path.append({your_path_to_the_elastic_net_directory_where_the_files_where_downloaded_and_compiled")
-  from elastic_net import ElasticNet
+ import sys
+ sys.path.append({your_path_to_the_elastic_net_directory_where_the_files_where_downloaded_and_compiled")
+ from elastic_net import ElasticNet
 
 
 ElasticNet(alpha=1, l1_ratio=0.5, max_iter=100, tol=0.0001)
