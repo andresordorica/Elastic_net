@@ -11,7 +11,9 @@ python setup.py build_ext --inplace
 3. To use the ElasticNet class from the elastic_net code just add the following lines to your python script.
 
 import sys
+
 sys.path.append({your_path_to_the_elastic_net_directory_where_the_files_where_downloaded_and_compiled")
+
 from elastic_net import ElasticNet
 
 
